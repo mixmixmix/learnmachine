@@ -1,6 +1,6 @@
 ### Word of introduction
 
-This course uses *Jupyter Lab*, an online code editing environment for Python, R, Julia and many more languages. The easiest way to install it, as well as all required libraries is using Anacoda - a Python framework.
+This course uses *Jupyter Lab*, an in-browser code editing environment for Python, R, Julia and many more languages. The easiest way to install it, as well as all required libraries is using Anacoda - a Python framework.
 
 ### To install Anaconda
 
