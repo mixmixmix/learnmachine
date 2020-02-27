@@ -26,7 +26,7 @@ To get the materials for this course clone this repository using github, or pres
 1. Unzip the downloaded file.
 2. Open a terminal and navigate to the unzipped folder, or clonned repository, e.g. `cd ./learnmachine/`.
 3. Run `conda env create -f environment.yml`. This installs all the prerequisite packages for the course in a virtual environment called 'learnmachine_env'.
-4. Run `conda activate bioimage`. This moves you into the virtual environment.
+4. Run `conda activate learnmachine_env`. This moves you into the virtual environment.
 5. Run `python3 -m ipykernel install --user --name=learnmachine_env`. This makes this virtual environment available as a kernel in Jupyter lab.
 6. Run `conda deactivate` to leave the virtual environment.
 7. Start Jupyter Lab, either through Anaconda Navigator or by running `jupyter lab` in a terminal.
