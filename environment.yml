@@ -1,0 +1,16 @@
+name: learnmachine_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - ipykernel
+  - ipympl
+  - seaborn
+  - scikit-learn
+  - conda-forge::opencv=4.1.2
+  - conda-forge::lmfit=0.9.14
+  - pip
+  - pip:
+    - psf==2019.4.22
+    - scikit-image==0.16.1

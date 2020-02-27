@@ -25,13 +25,13 @@ To get the materials for this course clone this repository using github, or pres
 
 1. Unzip the downloaded file.
 2. Open a terminal and navigate to the unzipped folder, or clonned repository, e.g. `cd ./learnmachine/`.
-3. Run `conda env create -f environment.yml`. This installs all the prerequisite packages for the course in a virtual environment called 'learnmachine_setup'.
+3. Run `conda env create -f environment.yml`. This installs all the prerequisite packages for the course in a virtual environment called 'learnmachine_env'.
 4. Run `conda activate bioimage`. This moves you into the virtual environment.
-5. Run `python3 -m ipykernel install --user --name=learnmachine_setup`. This makes this virtual environment available as a kernel in Jupyter lab.
+5. Run `python3 -m ipykernel install --user --name=learnmachine_env`. This makes this virtual environment available as a kernel in Jupyter lab.
 6. Run `conda deactivate` to leave the virtual environment.
 7. Start Jupyter Lab, either through Anaconda Navigator or by running `jupyter lab` in a terminal.
 
-You will need to change the kernel for each notebook from the default 'Python 3' notebook to the 'learnmachine_setup' notebook. You can do this by clicking where it says 'Python 3' in the top right or bottom left of a Jupyter Lab window.
+You will need to change the kernel for each notebook from the default 'Python 3' notebook to the 'learnmachine_env' notebook. You can do this by clicking where it says 'Python 3' in the top right or bottom left of a Jupyter Lab window.
 
 ### To learn how to use course:
 
