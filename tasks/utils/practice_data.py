@@ -120,7 +120,7 @@ def generateBlobsData(imageDir, noClasses, trainSamples, imSize=64, noiseSize=25
 
     blob_data.shape
     blob_data_shuffled = blob_data.sample(frac=1).reset_index(drop=True)
-    if trainSamples >= len(blob_data_shuffled):
+    if trainSamples > len(blob_data_shuffled):
         print("Requested more images than available!")
         trainSamples = len(blob_data_shuffled)
 
