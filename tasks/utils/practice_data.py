@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -95,7 +96,7 @@ def generateBlobsData(imageDir, noClasses, trainSamples, imSize=64, noiseSize=25
     blob_data= pd.DataFrame(columns=['class', 'raw_data'])
 
     for blob_file in all_blob_files:
-        blob_class = blob_file.split("/")[-1].split("_")[0]
+        blob_class = blob_file.split(os.sep)[-1].split("_")[0]
         blob_class_int=intblobclass[blob_class]
         if(noClasses <= blob_class_int):
             continue
