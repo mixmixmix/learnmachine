@@ -1,6 +1,7 @@
 .DS_Store
 .idea/
-tasks/assets
 .ipynb_checkpoints
 __pycache__
 *.swp
+tasks/assets/simple_blobs
+tasks/assets/difficult_blobs
