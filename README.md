@@ -1,6 +1,21 @@
+## Machine Learning:
+
 ### Word of introduction
+This course is composed of 6 lectures and number of practical tasks in Python.
+
+The content is heavily based on materials by [Toby Breckon](http://breckon.eu/toby/teaching/mltutorial/) and [Andrew Ng](https://www.coursera.org/learn/machine-learning/).
+
+Sessions:
+1. Basic Predictive Models
+2. Image Features
+3. Unsupervised Learning
+4. Supervised Learning
+5. Deep Learning
 
 This course uses *Jupyter Lab*, an in-browser code editing environment for Python, R, Julia and many more languages. The easiest way to install it, as well as all required libraries is using Anacoda - a Python framework.
+
+Prepared and presented for the first time by [Mikolaj (Miks) Kundegorski](https://mixmixmix.github.io) with help from [Chas Nelson](https://chasnelson.co.uk) for Python For Bioimage Analysis Course in Cambridge, December 2019. 
+The second session took place in March 2020 at CES, IISC, Banaglore, India.
 
 ### To install Anaconda
 
@@ -25,9 +40,9 @@ To get the materials for this course clone this repository using github, or pres
 
 1. Unzip the downloaded file.
 2. Open a terminal and navigate to the unzipped folder, or clonned repository, e.g. `cd ./learnmachine/`.
-3. Run `conda env create -f environment.yml`. This installs all the prerequisite packages for the course in a virtual environment called 'learnmachine_env'.
+3. Run `conda env create -f learnmachine_env.yml`. This installs all the prerequisite packages for the course in a virtual environment called 'learnmachine_env'.
 4. Run `conda activate learnmachine_env`. This moves you into the virtual environment.
-5. Run `python3 -m ipykernel install --user --name=learnmachine_env`. This makes this virtual environment available as a kernel in Jupyter lab.
+5. Run `python -m ipykernel install --user --name=learnmachine_env`. This makes this virtual environment available as a kernel in Jupyter lab.
 6. Run `conda deactivate` to leave the virtual environment.
 7. Start Jupyter Lab, either through Anaconda Navigator or by running `jupyter lab` in a terminal.
 
@@ -35,4 +50,24 @@ You will need to change the kernel for each notebook from the default 'Python 3'
 
 ### To learn how to use course:
 
-In Jupyter lab choose `01_running-python.ipynb` to learn how to use the notebooks.
+Our Python for Beginners course provides all information needed to use Jupyter Lab and key Python libraries: https://github.com/ChasNelson1990/python-zero-to-hero-beginners-course
+
+### Running Tasks
+
+There are four tasks corresponding to the Sessions 1, 3 and 4. To perform those download `simple_blobs.zip` from [here](https://www.dropbox.com/sh/0s1mo71j99p1di3/AACscxEOM1mXnGhIZICCoMMDa?dl=0) and unzip in `tasks/assets` directory.
+
+
+
+### Running CNN example
+
+`demo_cnn.ipynb` is a demonstration of CNN in Keras solving the problem of blob classification.
+
+You need some additional reep learning libraries to run this example. Use another virutal environment for this occasion:
+
+```
+conda env create -f deeplearn_env.yml
+conda activate deeplearn_env
+python -m ipykernel install --user --name=deeplearn_env
+conda deactivate
+```
+Then, restart the jupyter lab and choose `deeplearn_env` kernel.
